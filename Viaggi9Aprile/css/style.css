@@ -1,0 +1,33 @@
+
+    html {
+        min-height: 100%;
+    }
+
+    .titolo-centered {
+        font-family: fantasy, serif;
+        font-size: 3em;
+        text-align: center;
+        color: rgb(187, 199, 189);
+    }
+
+    .text-centered {
+        text-align: center;
+    }
+
+    .img-centrata {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-right {
+        display: block;
+        margin-left: auto;
+        margin-right: 0%;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom left, rgb(74, 216, 31), rgb(255, 154, 2), blue);
+
+
+    }
