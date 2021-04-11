@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Es1</title>
+    <script type="text/javascript">
+        function aCaso() {
+            var p = 10;
+            var q = "4c";
+            var d = new Date();
+            var ora = d.toLocaleTimeString();
+            //alert(ora);
+            //document.write(ora);
+            var eta = prompt("quanti anni hai?", "domanda");
+            if (eta > 17) {
+                alert("maggiorenne");
+            }
+            else {
+                alert("minorenne");
+            }
+            //vis numera tra 1 e 200
+            for (var n = 1; n < 201; n++) {
+                document.write(n)
+            }
+        }
+        function visOra()
+        {
+            
+        }
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <input type="button" value="Premi!!!" name="btn1" onclick="visOra()">
+    </form>
+
+</body>
+
+</html>

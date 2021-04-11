@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Es1</title>
+    <script type="text/javascript">
+        function invRisposta(form) {
+            if (form.r1.checked)
+                var risposta = "ok";
+            else
+                var risposta = "not ok";
+            document.getElementById("esito").innerHTML = risposta;
+        }
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                quanto fa 2+2 ?
+            </legend>
+            <p><input type="radio" name="risp" id="r1">4</p>
+            <p><input type="radio" name="risp" id="r2">6</p>
+            <p><input type="radio" name="risp" id="r3">2</p>
+            <p><input type="radio" name="risp" id="r4">8</p>
+        </fieldset>
+        <p><input type="button" id="btn1" value="invia" onclick="invRisposta(this.form)"></p>
+        <p><input type="reset" id="reset" value="reset"></p>
+        <p id="esito"></p>
+    </form>
+
+</body>
+
+</html>
