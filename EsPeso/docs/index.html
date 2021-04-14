@@ -3,29 +3,48 @@
 
 <head>
     <script src="../javascript/script.js">
-       
+
     </script>
+    <style>
+        .dati {
+            width: 160px;
+            height: 2opx;
+            text-align: right;
+
+        }
+
+        .risultati {
+            color: blue;
+            font-size: 110%;
+        }
+
+        .bottone {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
     <title>index</title>
+
 </head>
 
 <body>
     <form>
-        <select id="materials">
-            <option value="7859">Acciao</option>
-            <option value="8400">Ottone</option>
-            <option value="2600">Alluminio</option>
-            <option value="8890">Rame</option>
-        </select>
         <p>
-            <input type="text" id="t1" value="volume">
+            <select id="materials" class="dati">
+                <option value="7859">Acciao</option>
+                <option value="8400">Ottone</option>
+                <option value="2600">Alluminio</option>
+                <option value="8890">Rame</option>
+            </select>
+            <input type="text" id="t1" value="volume" class="dati">
         </p>
         <p>
-            <input type="button" onclick="calculateWeight()" name="btn1" value="calcola peso">
+            <input type="button" onclick="calculateWeight()" name="btn1" value="calcola peso" class="bottone">
         </p>
-        <p id="pesoSP">
+        <p id="pesoSP" class="risultati">
             Peso specifico:
         </p>
-        <p id="peso">
+        <p id="peso" class="risultati">
             Peso
         </p>
     </form>

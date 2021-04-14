@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../javascript/script.js">
+    </script>
+    <title>Biglietto treno</title>
+</head>
+
+<body>
+    <form>
+        <p>
+        <p><input type="text" value="KM" id="tkm"></p>
+        <br>Classe
+        <input type="radio" name="classe" id="r1">1
+        <input type="radio" name="classe" id="r2">2
+        <p>Numero persone:<br>
+            <select id="n_people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </p>
+        <input type="button" value="calcola costo" onclick="calcolaPrezzo(this.form)">
+        </p>
+        <p id="prezzo">Prezzo:</p>
+    </form>
+</body>
+
+</html>
