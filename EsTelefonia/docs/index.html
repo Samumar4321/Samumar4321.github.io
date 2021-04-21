@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>EsOfferta</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../javascript/script.js"></script>
+</head>
+
+<body onload="start_setup()">
+
+    <div class="offerta-tel">
+        <h1 class="red-text">
+            <strong>
+                Passa a Iliad, ti regaliamo 100 GB, minuti e SMS ILLIMITATI PER SEMPRE
+            </strong>
+        </h1>
+        <p>
+            Offerta imperdibile con cui ottieni 100 GB di traffico fino con tecnologia 5G, minuti e SMS illimitati.<br>
+            Tutto ciò per sempre e ha soli 9,99 euro al mese.
+        </p>
+    </div>
+    <form class="centered-form">
+        <h2>Dati:</h2>
+        <label id="cognome">Cognome: </label>
+        <input type="text" id="txt_cognome">
+        <p></p>
+
+        <label id="nome">Nome: </label>
+        <input type="text" id="txt_nome">
+        <p></p>
+
+        <label id="numero">Numero di telefono: </label>
+        <input type="text" id="txt_numbero">
+        <p></p>
+
+        <label id="l_nascita">Luogo di nascita: </label>
+        <input type="text" id="txt_l_nascita">
+        <p></p>
+
+        <label id="data_nascita">Data di nascita: </label>
+        <input type="date" id="txt_data_nascita">
+        <p></p>
+
+        <label id="gender">Sesso: </label>
+        <select id="cmb_gender">
+            <option value="0">Select option</option>
+        </select>
+        <p></p>
+
+        <label id="colore_occhi">Colore degli occhi: </label>
+        <select id="cmb_colore_occhi">
+            <option value="0">Select option</option>
+        </select>
+        <p></p>
+
+        <label id="p_residenza">Provincia di residenza: </label>
+        <select id="cmb_provincia">
+            <option value="0">Select option</option>
+        </select>
+        <p></p>
+
+        <input type="button" value="Premi per i dynamic tag" onclick="start_setup()">
+
+    </form>
+
+</body>
+
+</html>

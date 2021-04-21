@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz con javascript</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <h4>Dati anagrafici</h4>
+        <label id="cognome">Cognome </label>
+        <input type="text" id="txt_cognome">
+        <label for="nome">Nome </label>
+        <input type="text" id="txt_nome">
+        <h4>Data di nascita</h4>
+        <label id="giorno">Giorno </label>
+        <input type="text" id="txt_giorno">
+        <label id="mese">Mese </label>
+        <select id="cmb_mese">
+            <option value="1">Gennaio</option>
+            <option value="2">Febbraio</option>
+            <option value="3">Marzo</option>
+            <option value="4">Aprile</option>
+            <option value="5">Maggio</option>
+            <option value="6">Giugno</option>
+            <option value="7">Luglio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Settembre</option>
+            <option value="10">Ottobre</option>
+            <option value="11">Novembre</option>
+            <option value="12">Dicembre</option>
+        </select>
+        <label id="anno">Anno:</label>
+        <input type="text" id="txt_anno">
+        <p></p>
+        <fieldset>
+            <legend>Domande</legend>
+            <label id="d1">
+                Qual è il linguaggio di programmazione utilizzato per creare e modificare i database? (in maiuscolo)
+            </label>
+            <br>
+            <input type="text" id="txt_d1">
+            <p></p>
+            <label id="d2">
+                Quanti valori può assumere una variabile booleana?</label>
+            <br>
+            <select id="cmb_d2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">4</option>
+                <option value="4">256</option>
+            </select>
+            <p></p>
+            <label id="d3">Quali sono le librerie caricate a run-time?</label>
+            <br>
+            <input type="radio" name="d3" id="r1">Statiche
+            <br>
+            <input type="radio" name="d3" id="r2">Dinamiche
+            <p></p>
+            <label id="d4">Quali tra queste sono parole chiave in C++?</label>
+            <br>
+            <input type="checkbox" id="check1" name="d4" value="0">void
+            <br>
+            <input type="checkbox" id="check2" name="d4" value="1">integer
+            <br>
+            <input type="checkbox" id="check3" name="d4" value="2">char
+            <p></p>
+            <label id="d5">8 bit corrispondo a un...</label>
+            <br>
+            <input type="text" id="txt_d5">
+        </fieldset>
+        <p></p>
+        <input type="button" onclick="elabora()" value="Elabora">
+        <input type="reset" value="Reset">
+        <p></p>
+        <fieldset class="fieldset-15">
+            <legend>Esito</legend>
+            <label id="punteggio">Punteggio: </label>
+            <label id="punteggio"></label>
+        </fieldset>
+        <p></p>
+        <input type="button" onclick="getCodice()" value="Utente con punteggio">
+        <input type="text" id="txt_codice">
+    </form>
+
+</body>
+
+</html>
