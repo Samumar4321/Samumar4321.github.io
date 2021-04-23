@@ -1,0 +1,44 @@
+.div_desc {
+    width: 50%;
+    margin-top: 5px;
+    border-width: 2px;
+    border-color: rgb(248, 0, 0);
+    border-style: dashed;
+    padding: 0px 0px 5px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+.div_domande {
+    padding: 0px 5px 5px 5px;
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 2px;
+    border-color: rgb(250, 0, 0);
+    border-style: dashed;
+}
+
+body {
+    background-image: url("../images/background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.domanda {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(5, 16, 163);
+}
+
+.head-FAQ {
+    font-weight: bold;
+    color: teal;
+    text-align: center;
+}
+
+html {
+    min-height: 100%;
+}
