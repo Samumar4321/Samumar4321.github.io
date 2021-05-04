@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+    <script src="../javascript/script.js"></script>
+
+    <style>
+        h1 {
+            color:rgb(30, 255, 0);
+            text-align: center;
+        }
+        .centered{
+            text-align: center;
+        }
+
+        p {
+            margin-left: 20px;
+            color:cornsilk;
+        }
+
+        .affiancato {
+            margin-left: 7px;
+        }
+
+        .mex {
+            width: 450px;
+            height: 250px;
+            background-color: rgb(43, 24, 24);
+            color:cornsilk;
+        }
+        body{
+            background-color: rgb(180, 21, 21);
+            background-image: linear-gradient(to right, rgb(92, 19, 19), rgb(146, 6, 6), rgb(189, 21, 21), rgb(221, 0, 0));
+        }
+    </style>
+
+    <title>Creare un PDF con JavaScript</title>
+</head>
+
+<body>
+    <h1>Creare un PDF con JavaScript</h1>
+    <form class="centered">
+        <p>Inserire il nome:<input type="text" class="affiancato" id="nome" value=""></p>
+        <p>Inserire il cognome:<input type="text" class="affiancato" id="cognome" value=""></p>
+        <p>Inserire il numero di telefono:<input type="number" class="affiancato" id="numero" value="39"></p>
+        <p>Inserire l'email:<input type="text" class="affiancato" id="email" value=""></p>
+        <p>
+            Inserire un messaggio:
+        <p>
+            <textarea id="mes" class="mex"></textarea>
+        </p>
+        </p>
+        <p>Clicca il bottone per scaricare il PDF con i tuoi dati:<input type="button" class="affiancato"
+                id="btnPDF" value="Clicca qui" onclick="creaPDF()"></p>
+    </form>
+</body>
+
+</html>
